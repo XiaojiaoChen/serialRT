@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Arm</class>
+ <widget class="QWidget" name="Arm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>549</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="1" rowspan="10">
+    <widget class="QGroupBox" name="Pinky">
+     <property name="title">
+      <string>Pinky</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="Bellow" name="bellow2" native="true"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="Bellow" name="bellow1" native="true"/>
+        </item>
+        <item row="0" column="3">
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <widget class="Bellow" name="bellow3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_10"/>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="2">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="3">
+         <widget class="Bellow" name="bellow0" native="true"/>
+        </item>
+        <item row="2" column="0">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="1">
+         <widget class="Bellow" name="bellow4" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <property name="spacing">
+            <number>1</number>
+           </property>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="Bellow" name="bellow5" native="true"/>
+        </item>
+        <item row="2" column="3">
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>18</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="plotDialogButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Plots</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="serialButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>Sync Soft Hand</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <spacer name="verticalSpacer_7">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>123</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="joyStickButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>JoyStick</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QPushButton" name="savePlotButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>SavePlot</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="freLabel">
+     <property name="text">
+      <string>frequency 40 Hz</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="LenLabel">
+     <property name="text">
+      <string>Length 410 mm</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="Bellow" name="sinkBellow" native="true"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="forceSensorButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>ATI_ForceSensor</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Bellow</class>
+   <extends>QWidget</extends>
+   <header>bellow</header>
+   <container>1</container>
+   <slots>
+    <signal>sigValueChanged(int,float,int)</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bellow5</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Arm</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bellow0</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Arm</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>524</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bellow1</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Arm</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bellow2</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Arm</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bellow3</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Arm</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>343</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bellow4</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Arm</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>404</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>plotDialogButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Arm</receiver>
+   <slot>slotPlotDialogButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>80</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>savePlotButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Arm</receiver>
+   <slot>slotSavePlotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>276</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>481</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>joyStickButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Arm</receiver>
+   <slot>slotJoyStickClicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>548</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sinkBellow</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Arm</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>163</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>317</x>
+     <y>-21</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotValueChanged(int,float,int)</slot>
+  <slot>slotSendFrame()</slot>
+  <slot>slotLeapMotionClicked(bool)</slot>
+  <slot>slotNewMotionClicked()</slot>
+  <slot>slotAddTimeClicked()</slot>
+  <slot>slotPlotDialogButtonClicked()</slot>
+  <slot>slotSavePlotData()</slot>
+  <slot>slotJoyStickClicked(bool)</slot>
+  <slot>slotMapToFingers()</slot>
+ </slots>
+</ui>

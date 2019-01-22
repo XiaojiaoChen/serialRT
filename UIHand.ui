@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Hand</class>
+ <widget class="QWidget" name="Hand">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>853</width>
+    <height>321</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_14">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_13">
+     <item row="0" column="2" rowspan="3">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>48</width>
+         <height>108</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="joyStickButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>JoyStick</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <spacer name="horizontalSpacer_11">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>78</width>
+         <height>17</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="8" column="2" colspan="3">
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>288</width>
+         <height>17</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="0" rowspan="5">
+      <spacer name="verticalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>48</width>
+         <height>258</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="leapMotionButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Leap Motion</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="4">
+      <spacer name="horizontalSpacer_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>78</width>
+         <height>17</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="9" column="1">
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>358</width>
+         <height>17</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="9" column="2" colspan="2">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="5">
+        <widget class="QDoubleSpinBox" name="frametime">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="buttonSymbols">
+          <enum>QAbstractSpinBox::NoButtons</enum>
+         </property>
+         <property name="decimals">
+          <number>1</number>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>17</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="newMotionButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>+</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QPushButton" name="addTimeButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>+1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="newMotionText">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>13</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="2">
+        <widget class="QComboBox" name="motionList">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <item>
+          <property name="text">
+           <string>grasp</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>wave</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="3" colspan="2">
+        <widget class="QLabel" name="label_2">
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>at T =</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5" colspan="2">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>48</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="6">
+        <widget class="QPushButton" name="addFrameButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="label">
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Motion:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="pushButton">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Map to</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <spacer name="horizontalSpacer_12">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>78</width>
+         <height>17</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="4">
+      <spacer name="horizontalSpacer_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>78</width>
+         <height>17</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="6" column="2" rowspan="2">
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>48</width>
+         <height>88</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="3" rowspan="8">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QRadioButton" name="twoFinger">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Two Fingers</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="threeFinger">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Three Fingers</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="fourFinger">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Four Fingers</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="fiveFinger">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Five Fingers</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="serialButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Sync Soft Hand</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1" rowspan="9">
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="0" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1" rowspan="2" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QGroupBox" name="Index">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title">
+            <string>Index</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0" colspan="2">
+               <widget class="NormalJoint" name="DIPIndex" native="true">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="NormalJoint" name="PIPIndex" native="true">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="NormalJoint" name="MPIndex" native="true">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="NormalJoint" name="ABIndex" native="true"/>
+              </item>
+              <item row="3" column="1">
+               <widget class="NormalJoint" name="ADIndex" native="true"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="Middle">
+           <property name="title">
+            <string>Middle</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0" colspan="2">
+               <widget class="NormalJoint" name="DIPMiddle" native="true"/>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="NormalJoint" name="PIPMiddle" native="true"/>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="NormalJoint" name="MPMiddle" native="true"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="NormalJoint" name="ABMiddle" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_6"/>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="NormalJoint" name="ADMiddle" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="Ring">
+           <property name="title">
+            <string>Ring</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_6">
+              <item row="0" column="0" colspan="2">
+               <widget class="NormalJoint" name="DIPRing" native="true"/>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="NormalJoint" name="PIPRing" native="true"/>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="NormalJoint" name="MPRing" native="true"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="NormalJoint" name="ABRing" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_8"/>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="NormalJoint" name="ADRing" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="Pinky">
+           <property name="title">
+            <string>Pinky</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="0" column="0" colspan="2">
+               <widget class="NormalJoint" name="DIPPinky" native="true"/>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="NormalJoint" name="PIPPinky" native="true"/>
+              </item>
+              <item row="2" column="0" colspan="2">
+               <widget class="NormalJoint" name="MPPinky" native="true"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="NormalJoint" name="ABPinky" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_10"/>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="NormalJoint" name="ADPinky" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <property name="spacing">
+                  <number>1</number>
+                 </property>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0" rowspan="2">
+        <widget class="QGroupBox" name="Thumb">
+         <property name="title">
+          <string>Thumb</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0" colspan="2">
+             <widget class="NormalJoint" name="DPThumb" native="true"/>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="NormalJoint" name="MPThumb" native="true"/>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="NormalJoint" name="TPThumb" native="true"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="NormalJoint" name="PalmThumb" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_40"/>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="NormalJoint" name="PalmThumbBack" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_41"/>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>178</width>
+           <height>17</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="2">
+        <widget class="NormalJoint" name="PalmPinky" native="true"/>
+       </item>
+       <item row="2" column="3">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>236</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="plotDialogButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Plots</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="savePlotButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>SavePlot</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NormalJoint</class>
+   <extends>QWidget</extends>
+   <header>NormalJoint</header>
+   <container>1</container>
+   <slots>
+    <signal>sigValueChanged(int,float,int)</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>DIPIndex</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>77</x>
+     <y>38</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PIPIndex</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MPIndex</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>171</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ABIndex</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>219</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ADIndex</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DIPMiddle</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>413</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PIPMiddle</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MPMiddle</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>469</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ABMiddle</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>315</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ADMiddle</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DIPRing</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>428</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>676</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PIPRing</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>428</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>694</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MPRing</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>428</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>718</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ABRing</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>399</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ADRing</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>428</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DIPPinky</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>77</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PIPPinky</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MPPinky</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ABPinky</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>483</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ADPinky</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>512</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PalmPinky</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>282</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DPThumb</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>254</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MPThumb</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TPThumb</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PalmThumb</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>27</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addFrameButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Hand</receiver>
+   <slot>slotSendFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>863</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>656</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leapMotionButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotLeapMotionClicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>18</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newMotionButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Hand</receiver>
+   <slot>slotNewMotionClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>584</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>266</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addTimeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Hand</receiver>
+   <slot>slotAddTimeClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PalmThumbBack</sender>
+   <signal>sigValueChanged(int,float,int)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotValueChanged(int,float,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>-14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>plotDialogButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Hand</receiver>
+   <slot>slotPlotDialogButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>-18</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>savePlotButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Hand</receiver>
+   <slot>slotSavePlotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>155</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>481</x>
+     <y>-19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>joyStickButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Hand</receiver>
+   <slot>slotJoyStickClicked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>-24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Hand</receiver>
+   <slot>slotMapToFingers()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>666</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>773</x>
+     <y>-12</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotValueChanged(int,float,int)</slot>
+  <slot>slotSendFrame()</slot>
+  <slot>slotLeapMotionClicked(bool)</slot>
+  <slot>slotNewMotionClicked()</slot>
+  <slot>slotAddTimeClicked()</slot>
+  <slot>slotPlotDialogButtonClicked()</slot>
+  <slot>slotSavePlotData()</slot>
+  <slot>slotJoyStickClicked(bool)</slot>
+  <slot>slotMapToFingers()</slot>
+ </slots>
+</ui>

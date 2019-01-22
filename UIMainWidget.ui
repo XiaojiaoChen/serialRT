@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWidget</class>
+ <widget class="QWidget" name="mainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>985</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SoftHand</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Preferred</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>48</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="2" colspan="2">
+      <widget class="QTextBrowser" name="textBrowser"/>
+     </item>
+     <item row="2" column="0" rowspan="2">
+      <widget class="MySequence" name="sequence" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout"/>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="saveButton">
+       <property name="text">
+        <string>Save Configuration</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>38</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="2" rowspan="2" colspan="2">
+      <widget class="MySerial" name="serial" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" rowspan="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Preferred</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>48</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="1">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>38</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="MyHand" name="hand" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1400</width>
+         <height>600</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MySerial</class>
+   <extends>QWidget</extends>
+   <header>mySerial</header>
+   <container>1</container>
+   <slots>
+    <signal>sigNewLine()</signal>
+    <signal>sigAngleCommandChanged()</signal>
+    <slot>slotSendRequest(QString)</slot>
+    <slot>slotSendRequestBin()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>MyHand</class>
+   <extends>QWidget</extends>
+   <header>myHand.h</header>
+   <container>1</container>
+   <slots>
+    <signal>sigSendCommand(QString)</signal>
+    <signal>sigAddFrame()</signal>
+    <signal>sigReadyToSave()</signal>
+    <signal>sigSendLeapMotion()</signal>
+    <slot>slotSaveConfiguration()</slot>
+    <slot>slotNewDataArrived()</slot>
+    <slot>slotAngleCommandChanged()</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>MySequence</class>
+   <extends>QWidget</extends>
+   <header>mySequence</header>
+   <container>1</container>
+   <slots>
+    <signal>sigSendCommandFromSequence()</signal>
+    <signal>sigReadyToSave()</signal>
+    <slot>slotAddFrame()</slot>
+    <slot>slotSaveConfiguration()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>hand</sender>
+   <signal>sigSendCommand(QString)</signal>
+   <receiver>serial</receiver>
+   <slot>slotSendRequest(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>763</x>
+     <y>105</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hand</sender>
+   <signal>sigAddFrame()</signal>
+   <receiver>sequence</receiver>
+   <slot>slotAddFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sequence</sender>
+   <signal>sigSendCommandFromSequence()</signal>
+   <receiver>serial</receiver>
+   <slot>slotSendRequestBin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>246</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>972</x>
+     <y>132</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>clicked()</signal>
+   <receiver>hand</receiver>
+   <slot>slotSaveConfiguration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>972</x>
+     <y>206</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>334</x>
+     <y>12</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sequence</sender>
+   <signal>sigReadyToSave()</signal>
+   <receiver>mainWidget</receiver>
+   <slot>slotReadyToSave()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>246</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>775</x>
+     <y>417</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hand</sender>
+   <signal>sigReadyToSave()</signal>
+   <receiver>sequence</receiver>
+   <slot>slotSaveConfiguration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>serial</sender>
+   <signal>sigNewLine()</signal>
+   <receiver>hand</receiver>
+   <slot>slotNewDataArrived()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>857</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>12</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>serial</sender>
+   <signal>sigAngleCommandChanged()</signal>
+   <receiver>hand</receiver>
+   <slot>slotAngleCommandChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>35</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hand</sender>
+   <signal>sigSendLeapMotion()</signal>
+   <receiver>serial</receiver>
+   <slot>slotSendRequestBin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>276</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>741</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotSaveButtonClicked()</slot>
+  <slot>slotReadyToSave()</slot>
+ </slots>
+</ui>
